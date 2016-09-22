@@ -36,8 +36,8 @@ function build {
 if [ "$1" == "" ]; then
 	echo "Please input some options"
 	echo "'gen newdocker' for construct new Dockerfiles and Docker Build folder"
-	echo "This cmd will create a folder named 'newdocker' in dockerfiles folder and continers folder"
-	echo "'build newdocker' will take dockerfiles from dockerfiles/newdocker"
+	echo "This cmd will create a folder named 'newdocker' in dockerfiles folder"
+	echo "'build newdocker' will take dockerfiles from dockerfiles/newdocker and docker build it"
 elif [ "$1" == "gen" ]; then
 	generate "$2"
 elif [ "$1" == "build" ]; then
